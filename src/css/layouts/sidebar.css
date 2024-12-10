@@ -1,0 +1,75 @@
+.minisidebar-icon {
+    position: fixed;
+    left: 0;
+    height: 100%;
+    top: 0;
+    background-color: #f4f7fb;
+    width: 80px;
+}
+
+.menu-sidebar {
+    height: 100%;
+    width: 240px !important;
+    background: var(--bs-white);
+    top: 0;
+    left: 0px;
+    transition: left .4s ease-in-out;
+}
+
+.sidebar-nav .caption {
+    padding-top: 20px !important;
+    margin-top: 20px !important;
+    border-top: 1px solid var(--color-border);
+}
+
+.sidebar-nav .caption:first-child {
+    padding-top: 0 !important;
+    margin-top: 0px !important;
+    border-top: 0 !important;
+}
+
+.sidebar-dropdown li a {
+    opacity: 0.9;
+    padding: 8px 16px;
+    box-shadow: none !important;
+}
+.sidebar-dropdown li a.active {
+    opacity: 1;
+    color: var(--color-primary) !important;
+}   
+
+.sidebar-dropdown li a {
+    background-color: transparent !important;
+}
+
+.sidebar-dropdown li a:hover {
+    background-color: transparent !important;
+    opacity: 1;
+}
+
+.sidebar-dropdown li button:hover {
+    background-color: transparent !important;
+}
+
+.sidebar-dropdown li .iconify--fad {
+    height: 9px;
+    width: 9px;
+    margin: 0 4px;
+}
+.barnd-logo{
+    min-height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-link{
+display: block;
+font-size: 14px;
+color: #98a4ae;
+text-decoration: none;
+background: 0 0;
+border: 0;
+transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+

@@ -1,0 +1,25 @@
+.page-wrapper {
+    margin-left: 240px;
+    transition: .2s ease-in;
+    margin-right: 15px;
+
+}
+
+.simplebar-scrollbar:before {
+    background: var(--color-border) !important;
+  }
+  [data-simplebar], .simplebar-offset, .simplebar-content,.simplebar-wrapper,.simplebar-mask,.simplebar-content-wrapper{
+    outline:none !important;
+    border:none !important
+  }
+
+
+@media screen and (max-width:1280px) {
+    .page-wrapper{
+        margin-left: 15px;
+    }
+}
+
+[data-sidebar-type="mini-sidebar"] .page-wrapper-sub {
+    margin-left: 15px;
+}
