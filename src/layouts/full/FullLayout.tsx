@@ -22,10 +22,12 @@ const FullLayout: FC = () => {
           >
             {/* Body Content  */}
             <div
-              className={`w-full py-30 md:px-30 px-5`}
+              className={`w-full`}
             >
               <ScrollToTop>
-              <Outlet/>
+                <div className="container py-30">
+                <Outlet/>
+                </div>
               </ScrollToTop>
             </div>
           </div>

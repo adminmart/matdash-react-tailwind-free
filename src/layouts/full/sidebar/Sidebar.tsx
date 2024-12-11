@@ -5,6 +5,7 @@ import NavItems from "./NavItems";
 import SimpleBar from "simplebar-react";
 import React from "react";
 import FullLogo from "../shared/logo/FullLogo";
+import Upgrade from "./Upgrade";
 
 const SidebarLayout = () => {
 
@@ -19,8 +20,8 @@ const SidebarLayout = () => {
           <div className="px-6 py-4 flex items-center sidebarlogo">
             <FullLogo />
           </div>
-          <SimpleBar className="h-[calc(100vh_-_85px)]">
-            <Sidebar.Items className="pe-4 rtl:pe-0 rtl:ps-4 px-5 mt-2">
+          <SimpleBar className="h-[calc(100vh_-_230px)]">
+            <Sidebar.Items className="px-5 mt-2">
               <Sidebar.ItemGroup className="sidebar-nav hide-menu">
                 {SidebarContent &&
                   SidebarContent?.map((item, index) => (
@@ -40,6 +41,7 @@ const SidebarLayout = () => {
               </Sidebar.ItemGroup>
             </Sidebar.Items>
           </SimpleBar>
+          <Upgrade/>
         </Sidebar>
       </div>
     </>

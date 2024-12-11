@@ -1,7 +1,7 @@
 .page-wrapper {
-    margin-left: 240px;
+    margin-left: 256px;
     transition: .2s ease-in;
-    margin-right: 15px;
+    margin-right: 0px;
 
 }
 
@@ -13,10 +13,21 @@
     border:none !important
   }
 
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
 @media screen and (max-width:1280px) {
     .page-wrapper{
-        margin-left: 15px;
+        margin-left: 0px;
     }
 }
 

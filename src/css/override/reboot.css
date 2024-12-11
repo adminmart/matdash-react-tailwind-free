@@ -31,6 +31,14 @@
   transition: opacity 150ms, transform 150ms;
 }
 
+.notification{
+  position: absolute !important;
+  left: 104px !important;
+  top: 0px !important;
+  min-width: 40px !important;
+  transform: translate(-108px, 48px) !important;
+}
+
 .dropdown-leave {
   opacity: 1;
   transform: scale(1);
