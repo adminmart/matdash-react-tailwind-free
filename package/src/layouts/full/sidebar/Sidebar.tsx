@@ -6,6 +6,7 @@ import SimpleBar from "simplebar-react";
 import React from "react";
 import FullLogo from "../shared/logo/FullLogo";
 import Upgrade from "./Upgrade";
+import NavCollapse from "./NavCollapse";
 
 const SidebarLayout = () => {
 
@@ -14,13 +15,13 @@ const SidebarLayout = () => {
     <>
       <div className="xl:block hidden">
         <Sidebar
-          className="fixed menu-sidebar  bg-white dark:bg-darkgray rtl:pe-4 rtl:ps-0 "
+          className="fixed menu-sidebar  bg-white dark:bg-darkgray rtl:pe-4 rtl:ps-0 top-[62px]"
           aria-label="Sidebar with multi-level dropdown example"
         >
           <div className="px-6 py-4 flex items-center sidebarlogo">
             <FullLogo />
           </div>
-          <SimpleBar className="h-[calc(100vh_-_230px)]">
+          <SimpleBar className="h-[calc(100vh_-_294px)]">
             <Sidebar.Items className="px-5 mt-2">
               <Sidebar.ItemGroup className="sidebar-nav hide-menu">
                 {SidebarContent &&
@@ -31,10 +32,16 @@ const SidebarLayout = () => {
                           {item.heading}
                         </h5>
                         {item.children?.map((child, index) => (
-                          <React.Fragment key={child.id && index}>
-                              <NavItems item={child} />
-                          </React.Fragment>
-                        ))}
+                        <React.Fragment key={child.id && index}>
+                          {child.children ? (
+                            <div className="collpase-items">
+                              <NavCollapse item={child} />
+                            </div>
+                          ) : (
+                            <NavItems item={child} />
+                          )}
+                        </React.Fragment>
+                      ))}
                       </React.Fragment>
                     </div>
                   ))}

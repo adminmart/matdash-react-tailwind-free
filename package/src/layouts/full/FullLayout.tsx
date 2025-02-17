@@ -3,12 +3,14 @@ import { Outlet } from "react-router";
 import ScrollToTop from 'src/components/shared/ScrollToTop';
 import Sidebar from './sidebar/Sidebar';
 import Header from './header/Header';
+import Topbar from './header/Topbar';
 
 
 
 const FullLayout: FC = () => {
   return (
       <>
+      <Topbar/>
     <div className="flex w-full min-h-screen dark:bg-darkgray">
       <div className="page-wrapper flex w-full  ">
         {/* Header/sidebar */}

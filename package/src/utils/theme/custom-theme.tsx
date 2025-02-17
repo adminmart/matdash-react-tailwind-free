@@ -95,7 +95,7 @@ const customTheme = {
       off: "rounded-sm px-2.5 py-1",
       on: "rounded-full py-[5px] px-[10px]",
       size: {
-        xs: "h-3 w-3",
+        xs: "h-2 w-2 text-xs",
         sm: "h-3.5 w-3.5",
       },
     },
