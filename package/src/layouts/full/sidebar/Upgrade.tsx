@@ -9,7 +9,7 @@ const Upgrade = () => {
           <div className="grid grid-cols-12">
             <div className="col-span-7">
               <h6 className="text-base text-dark">Upgrade to pro</h6>
-              <Button color={"primary"} className="mt-3 rounded-xl" target="_blank" as={Link} to="https://adminmart.com/product/matdash-tailwind-react-admin-template/">
+              <Button color={"primary"} className="mt-3 rounded-xl" target="_blank" as={Link} to="https://adminmart.com/product/matdash-tailwind-react-admin-template/?ref=376">
                 Buy Pro
               </Button>
             </div>
