@@ -19,6 +19,7 @@ const Typography = Loadable(lazy(() => import("../views/typography/Typography"))
 const Table = Loadable(lazy(() => import("../views/tables/Table")));
 const Form = Loadable(lazy(() => import("../views/forms/Form")));
 const Shadow = Loadable(lazy(() => import("../views/shadows/Shadow")));
+const Alert = Loadable(lazy(() => import("../views/alerts/Alerts")));
 
 // icons
 const Solar = Loadable(lazy(() => import("../views/icons/Solar")));
@@ -38,6 +39,7 @@ const Router = [
       { path: '/ui/typography', exact: true, element: <Typography/> },
       { path: '/ui/table', exact: true, element: <Table/> },
       { path: '/ui/form', exact: true, element: <Form/> },
+      { path: '/ui/alert', exact: true, element: <Alert/> },
       { path: '/ui/shadow', exact: true, element: <Shadow/> },
       { path: '/icons/solar', exact: true, element: <Solar /> },
       { path: '/sample-page', exact: true, element: <SamplePage /> },
