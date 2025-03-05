@@ -24,7 +24,7 @@ const CustomCollapse: React.FC<{
             <span className="truncate max-w-28 nav-label "  >{label}</span>
           </div>
            <div className="flex items-center gap-0.5" >
-           {isPro ? <span className="py-0.5 px-2.5 text-[10px] bg-secondary text-white rounded-sm">Pro</span> : null}
+           {isPro ? <span className="py-0.5 px-2.5 text-[10px] bg-lightsecondary text-secondary rounded-sm">Pro</span> : null}
           <HiOutlineChevronDown
             className={twMerge("transform transition-transform", open ? "rotate-180" : "rotate-0")}
           />

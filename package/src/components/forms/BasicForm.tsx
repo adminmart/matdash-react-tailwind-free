@@ -53,7 +53,7 @@ const BasicForm = () => {
               <div className="mb-2 block">
                 <Label htmlFor="countries1" value="Country" />
               </div>
-              <Select id="countries1" required className="select-rounded">
+              <Select id="countries1" required className="select-md">
                 <option>India</option>
                 <option>Canada</option>
                 <option>France</option>
@@ -64,7 +64,7 @@ const BasicForm = () => {
               <div className="mb-2 block">
                 <Label htmlFor="countries2" value="State" />
               </div>
-              <Select id="countries2" required className="select-rounded">
+              <Select id="countries2" required className="select-md">
                 <option>Delhi</option>
                 <option>Gujarat</option>
                 <option>Mumbai</option>
@@ -75,7 +75,7 @@ const BasicForm = () => {
               <div className="mb-2 block">
                 <Label htmlFor="countries3" value="City" />
               </div>
-              <Select id="countries3" required className="select-rounded">
+              <Select id="countries3" required className="select-md">
                 <option>Rajkot</option>
                 <option>Ahemedabad</option>
               </Select>

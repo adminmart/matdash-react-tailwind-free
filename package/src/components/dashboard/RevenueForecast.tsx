@@ -70,6 +70,7 @@ const RevenueForecast = () => {
       offsetX: 0,
       offsetY: 10,
       stacked: true,
+      fontFamily: 'inherit',
       animations: {
         speed: 500,
       },

@@ -9,34 +9,34 @@ import Topbar from './header/Topbar';
 
 const FullLayout: FC = () => {
   return (
-      <>
-      <Topbar/>
-    <div className="flex w-full min-h-screen dark:bg-darkgray">
-      <div className="page-wrapper flex w-full  ">
-        {/* Header/sidebar */}
-            <Sidebar /> 
-        <div className="page-wrapper-sub flex flex-col w-full dark:bg-darkgray">
-          {/* Top Header  */}
-           <Header/>
+    <>
+      <Topbar />
+      <div className="flex w-full min-h-screen dark:bg-darkgray">
+        <div className="page-wrapper flex w-full  ">
+          {/* Header/sidebar */}
+          <Sidebar />
+          <div className="page-wrapper-sub flex flex-col w-full dark:bg-darkgray">
+            {/* Top Header  */}
+            <Header />
 
-          <div
-            className={`bg-lightgray dark:bg-dark  h-full rounded-bb`}
-          >
-            {/* Body Content  */}
             <div
-              className={`w-full`}
+              className={`bg-lightgray dark:bg-dark  h-full rounded-bb`}
             >
-              <ScrollToTop>
-                <div className="container py-30">
-                <Outlet/>
-                </div>
-              </ScrollToTop>
+              {/* Body Content  */}
+              <div
+                className={`w-full`}
+              >
+                <ScrollToTop>
+                  <div className="container py-30">
+                    <Outlet />
+                  </div>
+                </ScrollToTop>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-      </>
+    </>
   );
 };
 
