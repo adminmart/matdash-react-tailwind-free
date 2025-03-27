@@ -9,29 +9,55 @@ const Topbar = () => {
         {
             id: 1,
             title: "Bootstrap Preview",
-            href: "https://adminmart.com/product/matdash-bootstrap-5-admin-dashboard-template/?ref=56"
+            href: "https://adminmart.com/product/matdash-bootstrap-5-admin-dashboard-template/?ref=56#product-demo-section"
         },
         {
             id: 2,
             title: "Angular Preview",
-            href: "https://adminmart.com/product/matdash-material-angular-dashboard-template/?ref=56"
+            href: "https://adminmart.com/product/matdash-material-angular-dashboard-template/?ref=56#product-demo-section"
         },
         {
             id: 3,
             title: "Vuejs Preview",
-            href: "https://adminmart.com/product/matdash-vuejs-admin-dashboard/?ref=56"
+            href: "https://adminmart.com/product/matdash-vuejs-admin-dashboard/?ref=56#product-demo-section"
         },
         {
             id: 4,
             title: "Nextjs Preview",
-            href: "https://adminmart.com/product/matdash-next-js-admin-dashboard-template/?ref=56"
+            href: "https://adminmart.com/product/matdash-next-js-admin-dashboard-template/?ref=56#product-demo-section"
         },
         {
             id: 5,
             title: "React Preview",
-            href: "https://adminmart.com/product/matdash-tailwind-react-admin-template/?ref=56"
+            href: "https://adminmart.com/product/matdash-tailwind-react-admin-template/?ref=56#product-demo-section"
         },
+        {
+            id: 6,
+            title: "Buy Bootstrap Version",
+            href: "https://adminmart.com/product/matdash-bootstrap-5-admin-dashboard-template/?ref=56#product-price-section"
+        },
+        {
+            id: 7,
+            title: "Buy Angular Version",
+            href: "https://adminmart.com/product/matdash-material-angular-dashboard-template/?ref=56#product-price-section"
+        },
+        {
+            id: 8,
+            title: "Buy Vuejs Version",
+            href: "https://adminmart.com/product/matdash-vuejs-admin-dashboard/?ref=56#product-price-section"
+        },
+        {
+            id: 9,
+            title: "Buy Nextjs Version",
+            href: "https://adminmart.com/product/matdash-next-js-admin-dashboard-template/?ref=56#product-price-section"
+        },
+        {
+            id: 10,
+            title: "Buy React Version",
+            href: "https://adminmart.com/product/matdash-tailwind-react-admin-template/?ref=56#product-price-section"
+        }
     ]
+    
   return (
     <div className="py-3 px-4 bg-dark z-40 sticky top-0">
       <div className="flex items-center lg:justify-between justify-center flex-wrap">
@@ -61,7 +87,7 @@ const Topbar = () => {
                 </div>
             } color="outlineprimary" size="sm" className="py-2" >
               {
-                dropdownItems.map((item) => {
+                dropdownItems.slice(0,5).map((item) => {
                     return (
                         <Dropdown.Item className="flex items-center gap-1 text-sm py-2.5 px-4 group" as={Link} to={item.href} icon={() => <Icon icon="tabler:external-link" className="text-lg text-link group-hover:text-primary" />}>{item.title}</Dropdown.Item>
                     )
@@ -75,7 +101,7 @@ const Topbar = () => {
                 </div>
             } color="primary" size="sm" >
               {
-                dropdownItems.map((item) => {
+                dropdownItems.slice(5,10).map((item) => {
                     return (
                         <Dropdown.Item className="flex items-center gap-1 text-sm py-2.5 px-4 group" as={Link} to={item.href} icon={() => <Icon icon="tabler:external-link" className="text-lg text-link group-hover:text-primary" />}>{item.title}</Dropdown.Item>
                     )
