@@ -3,115 +3,107 @@ import adminmart_logo from "/src/assets/images/logos/logo-adminmart.svg";
 import { Link } from "react-router";
 import { Dropdown } from "flowbite-react/components/Dropdown";
 
+import img1 from "src/assets/images/svgs/react-cat-icon.svg";
+import img2 from "src/assets/images/svgs/angular-cat-icon.svg";
+import img3 from "src/assets/images/svgs/vue-cat-icon.svg";
+import img4 from "src/assets/images/svgs/nuxt-cat-icon.svg";
+import img5 from "src/assets/images/svgs/next-cat-icon.svg";
+import img6 from "src/assets/images/svgs/bt-cat-icon.svg";
+
 
 const Topbar = () => {
     const dropdownItems = [
         {
             id: 1,
-            title: "React Preview",
+            img: img1,
+            title: "React Version",
             href: "https://adminmart.com/product/matdash-tailwind-react-admin-template/?ref=56#product-demo-section"
         },
         {
             id: 2,
-            title: "Angular Preview",
+            img: img2,
+            title: "Angular Version",
             href: "https://adminmart.com/product/matdash-material-angular-dashboard-template/?ref=56#product-demo-section"
         },
         {
             id: 3,
-            title: "Vuejs Preview",
+            img: img3,
+            title: "Vuejs Version",
             href: "https://adminmart.com/product/matdash-vuejs-admin-dashboard/?ref=56#product-demo-section"
         },
         {
             id: 4,
-            title: "Nextjs Preview",
-            href: "https://adminmart.com/product/matdash-next-js-admin-dashboard-template/?ref=56#product-demo-section"
+            img: img4,
+            title: "Nuxtjs Version",
+            href: "https://adminmart.com/product/matdash-vuetify-nuxt-js-admin-template/?ref=56#product-demo-section"
         },
         {
             id: 5,
-            title: "Bootstrap Preview",
-            href: "https://adminmart.com/product/matdash-bootstrap-5-admin-dashboard-template/?ref=56#product-demo-section"
+            img: img5,
+            title: "NextJs Version",
+            href: "https://adminmart.com/product/matdash-next-js-admin-dashboard-template/?ref=56#product-demo-section"
         },
+
         {
             id: 6,
-            title: "Buy React Version",
-            href: "https://adminmart.com/product/matdash-tailwind-react-admin-template/?ref=56#product-price-section"
+            img: img6,
+            title: "Bootstrap Version",
+            href: "https://adminmart.com/product/matdash-bootstrap-5-admin-dashboard-template/?ref=56#product-demo-section"
         },
-        {
-            id: 7,
-            title: "Buy Angular Version",
-            href: "https://adminmart.com/product/matdash-material-angular-dashboard-template/?ref=56#product-price-section"
-        },
-        {
-            id: 8,
-            title: "Buy Vuejs Version",
-            href: "https://adminmart.com/product/matdash-vuejs-admin-dashboard/?ref=56#product-price-section"
-        },
-        {
-            id: 9,
-            title: "Buy Nextjs Version",
-            href: "https://adminmart.com/product/matdash-next-js-admin-dashboard-template/?ref=56#product-price-section"
-        },
-        {
-            id: 10,
-            title: "Buy Bootstrap Version",
-            href: "https://adminmart.com/product/matdash-bootstrap-5-admin-dashboard-template/?ref=56#product-price-section"
-        }
+
     ]
-    
-  return (
-    <div className="py-3 px-4 bg-dark z-40 sticky top-0">
-      <div className="flex items-center lg:justify-between justify-center flex-wrap">
-        <div className="flex items-center gap-12">
-            <img src={adminmart_logo} alt="logo" />
-            <div className="lg:flex items-center gap-3 hidden">
-                <Link to="https://adminmart.com/support/" className="flex items-center gap-1 text-white bg-transparent hover:bg-primary py-2 px-3 rounded-md">
-                    <Icon icon="tabler:lifebuoy" className="shrink-0 text-[19px]" />
-                    <h4 className="text-sm font-semibold leading-none text-white">Support</h4>
-                </Link>
-                <Link to="https://adminmart.com" className="flex items-center gap-1 text-white bg-transparent hover:bg-primary py-2 px-3 rounded-md">
-                    <Icon icon="tabler:gift" className="shrink-0 text-[19px]" />
-                    <h4 className="text-sm font-semibold leading-none text-white">Templates</h4>
-                </Link>
-                <Link to="https://adminmart.com/hire-us/" className="flex items-center gap-1 text-white bg-transparent hover:bg-primary py-2 px-3 rounded-md">
-                    <Icon icon="tabler:briefcase" className="shrink-0 text-[19px]" />
-                    <h4 className="text-sm font-semibold leading-none text-white">Hire Us</h4>
-                </Link>
+    return (
+        <div className="py-[15px] px-6 z-40 sticky top-0 bg-[linear-gradient(90deg,_#001138_0%,_#001e66_100%)]">
+            <div className="flex flex-col lg:flex-row gap-4 items-center justify-between">
+                <div className="md:flex hidden items-center gap-5">
+                    <Link target="_black" to="https://adminmart.com/">
+                        <img src={adminmart_logo} alt="logo" width={150} />
+                    </Link>
+                    <div className="xl:flex items-center gap-4 pl-5 border-l border-opacity-20 border-white hidden">
+                        <Link target="_black" to="https://adminmart.com/templates/react/" className="flex items-center gap-2 text-white bg-transparent hover:text-[#5d87ff]">
+                            <Icon icon="solar:window-frame-linear" width={20} />
+                            <h4 className="text-base font-normal leading-none text-white hover:text-[#5d87ff]">Templates</h4>
+                        </Link>
+                        <Link target="_black" to="https://adminmart.com/support/" className="flex items-center gap-2 text-white bg-transparent hover:text-[#5d87ff]">
+                            <Icon icon="solar:question-circle-linear" width={20} />
+                            <h4 className="text-base font-normal leading-none text-white hover:text-[#5d87ff]">Help</h4>
+                        </Link>
+                        <Link target="_black" to="https://adminmart.com/hire-us/" className="flex items-center gap-2 text-white bg-transparent hover:text-[#5d87ff]">
+                            <Icon icon="solar:case-round-linear" width={20} />
+                            <h4 className="text-base font-normal leading-none text-white hover:text-[#5d87ff]">Hire Us</h4>
+                        </Link>
+                    </div>
+                </div>
+                <div className="flex flex-col md:flex-row items-center gap-4 justify-center">
+                    <h4 className="text-sm font-semibold text-white uppercase bg-[linear-gradient(90deg,_#FFFFFF_0%,_#3772ff_100%)] [-webkit-background-clip:text] [background-clip:text] [-webkit-text-fill-color:transparent]">Checkout Pro Version</h4>
+                    <div className="flex flex-col sm:flex-row items-center gap-[10px]">
+                        <div className="flex items-center gap-[10px]">
+                            <div className="live-preview-drop !rounded-[4px] border border-[#ffffff66] border-1 hover:bg-[#3772ff]">
+                                <Dropdown label={
+                                    <p className="text-base text-white font-normal">Live Preview</p>
+                                } color="" size="sm" className="py-3 px-4 text-white" >
+                                    {
+                                        dropdownItems.map((item) => {
+                                            return (
+                                                <Dropdown.Item to={item.href} key={item.id} className="flex items-center gap-3 text-base text-[#000c29] py-3 px-[18px] group rounded-[4px] hover:bg-[#000c290d] hover:text-[#000c29]" as={Link} href={item.href} target='_blank' icon={() =>
+                                                    <img src={item.img} width={18} alt="logo" />}>
+                                                    <span className="group-hover:text-[#000c29]" >{item.title}</span>
+                                                </Dropdown.Item>
+                                            )
+                                        })
+                                    }
+                                </Dropdown>
+                            </div>
+                            <Link target="_black" to="https://adminmart.com/product/matdash-tailwind-react-admin-template/?ref=56" className="flex items-center px-4 py-[11px] rounded-[4px] gap-2 text-white bg-[#3772ff] hover:bg-[#5d87ff]">
+                                <Icon icon="solar:crown-linear" width={18} />
+                                <h4 className="text-base font-normal leading-none text-white">Get Pro</h4>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div className="flex items-center gap-2 lg:gap-y-0 gap-y-3 flex-wrap lg:mt-0 mt-2 justify-center">
-            <h4 className="text-lg font-semibold text-white">Check Matdash Premium Version</h4>
-            <Dropdown label={
-                <div className="flex items-center gap-1">
-                    <Icon icon="tabler:device-laptop" className="text-lg" />
-                     <p className="text-[15px]">Live Preview</p>
-                </div>
-            } color="outlineprimary" size="sm" className="py-2" >
-              {
-                dropdownItems.slice(0,5).map((item) => {
-                    return (
-                        <Dropdown.Item className="flex items-center gap-1 text-sm py-2.5 px-4 group" as={Link} to={item.href} icon={() => <Icon icon="tabler:external-link" className="text-lg text-link group-hover:text-primary" />}>{item.title}</Dropdown.Item>
-                    )
-                })
-              }
-            </Dropdown>
-            <Dropdown label={
-                <div className="flex items-center gap-1">
-                    <Icon icon="tabler:shopping-cart" className="text-lg" />
-                     <p className="text-[15px]">Buy Now</p>
-                </div>
-            } color="primary" size="sm" >
-              {
-                dropdownItems.slice(5,10).map((item) => {
-                    return (
-                        <Dropdown.Item className="flex items-center gap-1 text-sm py-2.5 px-4 group" as={Link} to={item.href} icon={() => <Icon icon="tabler:external-link" className="text-lg text-link group-hover:text-primary" />}>{item.title}</Dropdown.Item>
-                    )
-                })
-              }
-            </Dropdown>
-        </div>
-      </div>
-    </div>
-  )
+    )
 }
 
 export default Topbar
