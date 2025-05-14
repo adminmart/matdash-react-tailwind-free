@@ -2,6 +2,7 @@
 import {  Sidebar } from "flowbite-react";
 import SidebarContent from "./Sidebaritems";
 import NavItems from "./NavItems";
+// @ts-ignore
 import SimpleBar from "simplebar-react";
 import React from "react";
 import FullLogo from "../shared/logo/FullLogo";

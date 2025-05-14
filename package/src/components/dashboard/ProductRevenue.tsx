@@ -6,6 +6,7 @@ import product1 from "/src/assets/images/products/dash-prd-1.jpg";
 import product2 from "/src/assets/images/products/dash-prd-2.jpg";
 import product3 from "/src/assets/images/products/dash-prd-3.jpg";
 import product4 from "/src/assets/images/products/dash-prd-4.jpg";
+// @ts-ignore
 import SimpleBar from "simplebar-react";
 
 
